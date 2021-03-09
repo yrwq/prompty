@@ -1,6 +1,6 @@
 PROJECT = prompty
-CFLAGS := $(shell pkg-config --cflags lua5.1)
-LDFLAGS := $(shell pkg-config --libs lua5.1)
+CFLAGS := $(shell pkg-config --cflags lua5.1 libgit2)
+LDFLAGS := $(shell pkg-config --libs lua5.1 libgit2)
 OBJECTS = src/script.o src/func.o src/main.o
 
 CONF = "/home/${USER}/.config/prompty"
