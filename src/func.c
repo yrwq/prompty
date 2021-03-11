@@ -62,7 +62,7 @@ LFUNC(hostname){
     return 1;
 }
 
-/* yafetch.pwd() */
+/* prompty.pwd() */
 /* Returns current directory */
 LFUNC(pwd){
 
