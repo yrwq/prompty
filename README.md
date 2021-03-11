@@ -18,15 +18,19 @@ sudo make install
 
 ## Configuration
 
-[variables](https://github.com/yrwq/yafetch#variables)
-[functions](https://github.com/yrwq/yafetch#functions)
+[variables](https://github.com/yrwq/prompty#variables)
+[functions](https://github.com/yrwq/prompty#functions)
 
 ### Variables
 
+##### prompty.prompt_symbol()
+
 ### Functions
 
-##### yafetch.init()
-##### yafetch.bubble()
-##### yafetch.user()
-##### yafetch.hostname()
+##### prompty.init()
+##### prompty.bubble()
+##### prompty.user()
+##### prompty.hostname()
+##### prompty.git_branch()
+##### prompty.pwd()
 

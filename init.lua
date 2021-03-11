@@ -8,9 +8,13 @@ function pwd()
     local dir = prompty.pwd()
     local home = os.getenv("HOME")
     if string.match(dir, home) then
-        return dir:gsub(home, "  ~")
+        if string.match(home, dir) then
+            return dir:gsub(home, "  ~")
+        else
+            return dir:gsub(home, "  ~")
+        end
     else
-        return "  " .. dir
+        return dir
     end
 end
 
@@ -26,14 +30,18 @@ end
 
 function prompty.init()
 
+    -- built in function to make a bubbly section
+
     -- prompty.bubble(host)
     -- prompty.bubble(user)
     -- prompty.bubble(pwd())
-    -- prompty.bubble(git())
+    -- if prompty.git_branch() then
+    --     prompty.bubble(git())
+    -- end
+    -- prompty.prompt()
 
     prompty.format(pwd() .. git())
     prompty.prompt()
-
 
     -- if you don't want that fancy stuff
     -- print(pwd() .. " " .. prompty.prompt_symbol)
