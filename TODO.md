@@ -1,2 +1,0 @@
-- Fix window resizing
-- Git status
